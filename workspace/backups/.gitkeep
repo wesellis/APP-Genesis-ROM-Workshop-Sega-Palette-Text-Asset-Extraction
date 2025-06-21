@@ -1,0 +1,18 @@
+# ROM backups are stored here
+
+The workshop automatically creates backups of original ROMs before modification.
+
+This ensures you can always restore the original if something goes wrong.
+
+Backup naming convention:
+- `original_filename_YYYYMMDD_HHMMSS.md`
+- `original_filename_backup.md` (latest)
+
+Example:
+```
+backups/
+├── sonic_20250621_143022.md
+├── sonic_backup.md
+├── phantasy_star_4_20250621_150000.bin
+└── phantasy_star_4_backup.bin
+```

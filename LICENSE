@@ -1,0 +1,62 @@
+# License
+
+## Educational and Research Use
+
+This Genesis Decompilation Framework is intended for **educational and research purposes** in the field of software preservation and reverse engineering.
+
+## Legal Framework
+
+This project follows established **clean-room reverse engineering** principles:
+
+- **No ROM Distribution** - Users must provide their own legally obtained ROM files
+- **Clean Implementation** - All code is independently created from functional specifications
+- **Fair Use Analysis** - Technical analysis for interoperability and preservation
+- **Proper Attribution** - All external tools and knowledge sources are credited
+
+## Third-Party Components
+
+External tools maintain their original licenses:
+- **m68k-disasm** - Unlicense (Public Domain)
+- **GHIDRA** - Apache License 2.0  
+- **Genesis Compression Libraries** - Various open source licenses
+- **See THIRD_PARTY.md** for complete attribution
+
+## Intellectual Property
+
+### Code and Framework
+The framework code, documentation, and analysis tools are released for educational use with proper attribution.
+
+### Game Assets
+- **Not Included** - No copyrighted game assets are distributed
+- **User Extraction** - Tools extract assets from user's legally owned copies
+- **Analysis Only** - Asset extraction is for technical analysis purposes
+
+### Research and Analysis
+Technical analysis, documentation, and reverse engineering methodologies are shared for educational advancement.
+
+## Usage Restrictions
+
+### Commercial Use
+Commercial use requires separate licensing agreement and respect for original copyright holders.
+
+### Distribution
+- Framework and tools may be distributed with proper attribution
+- ROM files and copyrighted assets must never be included
+- Extracted assets are for personal analysis only
+
+## Legal Compliance
+
+This project operates under:
+- **DMCA Section 1201** - Interoperability research exemption
+- **Fair Use Doctrine** - Technical analysis and preservation
+- **Clean-Room Methodology** - Independent implementation principles
+
+## Disclaimer
+
+This software is provided for educational purposes. Users are responsible for ensuring their use complies with applicable laws and respects intellectual property rights.
+
+**For complete legal guidelines, see `docs/LEGAL - Framework.md`**
+
+---
+
+*This framework advances game preservation and reverse engineering education while respecting intellectual property rights.*

@@ -1,0 +1,25 @@
+# Your ROM hacking projects go here
+
+This directory is for your individual ROM modification projects.
+
+Each project will have its own subdirectory with:
+- Original ROM backup
+- Modified ROM files  
+- Project configuration
+- Modification history
+- Assets and documentation
+
+Example project structure:
+```
+projects/
+├── sonic_red_theme/
+│   ├── original_sonic.md
+│   ├── sonic_red.md
+│   ├── project.json
+│   └── palette_changes.json
+└── phantasy_star_spanish/
+    ├── original_ps4.bin
+    ├── ps4_spanish.bin
+    ├── translation.json
+    └── text_changes.json
+```

@@ -1,0 +1,24 @@
+# Extracted assets and analysis results
+
+This directory contains:
+- Extracted graphics (sprites, tiles, backgrounds)
+- Exported palettes and color data
+- Audio files converted from ROM data
+- Analysis results and documentation
+- Asset metadata and relationships
+
+Example structure:
+```
+exports/
+├── sonic_analysis/
+│   ├── palettes/
+│   ├── sprites/
+│   ├── audio/
+│   └── analysis.json
+├── palette_previews/
+│   ├── sonic_before_after.png
+│   └── streets_of_rage_sepia.png
+└── translation_data/
+    ├── phantasy_star_strings.json
+    └── sonic_menu_text.json
+```

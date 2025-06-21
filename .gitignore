@@ -1,0 +1,121 @@
+# Genesis ROM Workshop - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+rom_workshop_env/
+
+# ROM files (never commit copyrighted content)
+*.md
+*.bin
+*.smd
+*.gen
+*.32x
+*.gg
+*.sms
+roms/**/*.md
+roms/**/*.bin
+roms/**/*.smd
+roms/**/*.gen
+
+# ROM hacking outputs
+workspace/projects/*/
+workspace/backups/*/
+workspace/exports/*/
+output/
+*.ips
+*.patch
+*_modified.*
+*_hacked.*
+
+# User data and configs
+user_settings.json
+*.log
+temp/
+tmp/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Documentation builds
+docs/_build/
+site/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Backup files
+backup_*/
+minimal_backup/
+*.bak
+*.backup
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+extracted_assets/
+palette_previews/
+analysis_results/
+translation_projects/
+
+# Keep directory structure but ignore contents
+workspace/projects/*
+!workspace/projects/.gitkeep
+workspace/backups/*
+!workspace/backups/.gitkeep
+workspace/exports/*
+!workspace/exports/.gitkeep
+
+# Examples are okay to commit (no copyrighted content)
+!examples/
+!examples/**/*.md
+!examples/**/*.json
+!examples/**/*.py
+
+# Documentation examples (safe content only)
+!tools/**/examples/
+!tools/**/examples/*.json
+!tools/**/examples/*.md
