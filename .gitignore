@@ -34,17 +34,21 @@ venv.bak/
 rom_workshop_env/
 
 # ROM files (never commit copyrighted content)
-*.md
+# Note: Allow documentation .md files but block ROM .md files
+roms/**/*.md
+roms/**/*.bin
+roms/**/*.smd
+roms/**/*.gen
+workspace/**/*.md
+workspace/**/*.bin
+workspace/**/*.smd
+workspace/**/*.gen
 *.bin
 *.smd
 *.gen
 *.32x
 *.gg
 *.sms
-roms/**/*.md
-roms/**/*.bin
-roms/**/*.smd
-roms/**/*.gen
 
 # ROM hacking outputs
 workspace/projects/*/
@@ -109,13 +113,17 @@ workspace/backups/*
 workspace/exports/*
 !workspace/exports/.gitkeep
 
-# Examples are okay to commit (no copyrighted content)
+# Allow documentation and examples
+!README.md
+!CHANGELOG.md
+!CONTRIBUTING.md
+!ROADMAP.md
+!SECURITY.md
 !examples/
 !examples/**/*.md
 !examples/**/*.json
 !examples/**/*.py
-
-# Documentation examples (safe content only)
-!tools/**/examples/
-!tools/**/examples/*.json
-!tools/**/examples/*.md
+!tools/**/
+!tools/**/*.md
+!tools/**/*.json
+!tools/**/*.py
