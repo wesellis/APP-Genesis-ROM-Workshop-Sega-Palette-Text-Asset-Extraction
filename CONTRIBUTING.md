@@ -1,241 +1,263 @@
 # Contributing to Genesis ROM Workshop
 
-Thank you for your interest in contributing to Genesis ROM Workshop! This project focuses on **real, working ROM modification tools** with documented success rates.
+Thank you for your interest in contributing to an **honest** ROM modification toolkit that doesn't make impossible promises.
 
-## 🎯 Project Philosophy
+## 🎯 Project Philosophy (Brutally Honest)
 
-We prioritize:
-- **Working tools over flashy features**
-- **Honest documentation over marketing claims**  
-- **Real success rates over impossible promises**
-- **Educational value over complexity**
+This project exists because we got tired of ROM tools that promise revolutionary enhancements and deliver nothing. We prioritize:
 
-## 🚀 Quick Start for Contributors
+- **Brutal honesty** over marketing hype
+- **Working tools** over flashy promises  
+- **Realistic expectations** over impossible dreams
+- **Educational value** over revolutionary claims
 
-### Prerequisites
-- Python 3.8+
-- Basic understanding of ROM file formats
-- Respect for intellectual property rights
+## 🤷‍♂️ What You're Contributing To
 
-### Setup
-```bash
-git clone https://github.com/yourusername/genesis-rom-workshop.git
-cd genesis-rom-workshop
-pip install -r requirements.txt
-python grw_pipeline.py  # Test the workshop
-```
+Let's be clear about what this project actually is:
 
-## 🛠️ Contribution Areas
+### **What This Toolkit Does:**
+- Changes colors in old games (blue Sonic becomes red Sonic)
+- Replaces text with different text (for translations)
+- Extracts sprites and sounds from ROMs
+- Tweaks simple numbers (speed, health, lives)
+- Documents ROM structure for educational purposes
 
-### **Priority Areas (Help Needed!)**
+### **What This Toolkit Doesn't Do:**
+- Create HD graphics (impossible - no texture system exists)
+- Add 60fps to old games (would require rewriting game engines)
+- Enable true widescreen (graphics systems not designed for it)
+- Perform magical enhancements (magic isn't real)
 
-#### 1. **Complete Palette Modification (v1.1)**
-- **What's missing:** Palette changes aren't saved back to ROM
-- **Skills needed:** Python, binary file handling
-- **Impact:** High - makes palette editor actually functional
-- **Files:** `grw_pipeline.py` - `PaletteEditor` class
+### **Is This Worth Contributing To?**
 
-#### 2. **Text Replacement Validation (v1.2)**
-- **What's missing:** Length validation, encoding detection
-- **Skills needed:** Text processing, character encoding
-- **Impact:** High - prevents ROM crashes from text overflow
-- **Files:** `grw_pipeline.py` - `TextEditor` class
+**YES, if you value:**
+- Translation work that makes old games accessible
+- Preservation of gaming history through asset extraction
+- Educational tools that teach how retro games work
+- Honest documentation of what's possible vs impossible
 
-#### 3. **Asset Detection Improvements (v1.3)**
-- **What's missing:** Better sprite detection heuristics
-- **Skills needed:** Pattern recognition, Genesis graphics formats
-- **Impact:** Medium - improves asset extraction quality
-- **Files:** `grw_pipeline.py` - `AssetExtractor` class
+**NO, if you want:**
+- Revolutionary graphics enhancements
+- Magical performance improvements
+- Impossible technical achievements
+- Marketing-friendly feature lists
 
-#### 4. **Documentation and Examples**
-- **What's missing:** Step-by-step tutorials, real examples
-- **Skills needed:** Technical writing, ROM hacking knowledge
-- **Impact:** High - helps users actually use the tools
-- **Files:** `tools/` directory, examples
+## 🛠️ Realistic Contribution Areas
 
-### **Secondary Areas**
+### **High Value Contributions:**
 
-#### GUI Development
-- Visual palette editor with color picker
-- Text editor with in-ROM preview
-- Project management interface
+#### 1. **Translation Tools (Actually Important)**
+- Better text extraction algorithms
+- Character encoding detection
+- Translation memory systems
+- Project management for translation teams
 
-#### ROM Format Support
-- Additional Genesis ROM formats
-- Error handling for corrupted files
-- Cross-platform compatibility
+**Why this matters:** Making Japanese games playable in English has real cultural value.
 
-#### Community Features
-- Modification sharing system
-- Translation project templates
-- Quality verification tools
+#### 2. **Asset Preservation (Historically Valuable)**
+- Improved sprite detection
+- Audio format conversion
+- Asset cataloging systems
+- ROM structure documentation
+
+**Why this matters:** Preserving gaming history matters for future generations.
+
+#### 3. **Educational Resources (Genuinely Useful)**
+- Tutorials about ROM structure
+- Hardware limitation explanations
+- "Why X is impossible" documentation
+- Realistic capability demonstrations
+
+**Why this matters:** Teaching people about retro game development is valuable.
+
+#### 4. **Quality of Life Improvements (Modestly Helpful)**
+- Save state integration
+- Input lag reduction
+- Performance optimization (eliminate slowdown)
+- Better color optimization within hardware limits
+
+**Why this matters:** Small improvements can make old games more playable.
+
+### **Low Value Contributions:**
+
+#### ❌ **Impossible Enhancement Attempts**
+- 60fps conversion projects
+- True widescreen implementations
+- HD graphics "enhancement"
+- Revolutionary performance improvements
+
+**Why we don't want these:** They don't work and waste everyone's time.
+
+#### ❌ **Marketing Hype**
+- Exaggerated success rate claims
+- Revolutionary feature descriptions
+- Impossible capability promises
+- Buzzword-heavy documentation
+
+**Why we don't want these:** This project exists to counter ROM tool marketing lies.
 
 ## 📋 Development Guidelines
 
 ### **Code Standards**
-- **Python style:** Follow PEP 8 with clear docstrings
-- **Error handling:** Graceful failure with helpful messages
-- **Documentation:** Comment complex algorithms and format handling
-- **Testing:** Test with multiple ROM files and formats
-
-### **Genesis ROM Specifics**
-- Understand ROM formats: .md (interleaved), .bin, .smd, .gen
-- Handle byte swapping correctly for .md format
-- Respect hardware limitations (palette size, text length)
-- Preserve original ROM behavior and structure
-
-### **File Organization**
 ```python
-def modify_rom_data(rom_data: bytes, modifications: dict) -> bytes:
+def extract_palettes(rom_data: bytes) -> List[List[Tuple[int, int, int]]]:
     """
-    Apply modifications to ROM data.
+    Extract color palettes from Genesis ROM.
     
     Args:
-        rom_data: Original ROM binary data
-        modifications: Dict of changes to apply
+        rom_data: Genesis ROM binary data
         
     Returns:
-        Modified ROM data
+        List of palettes, each containing RGB color tuples
         
-    Raises:
-        ValueError: If modifications would corrupt ROM
+    Reality Check:
+        This finds existing colors in the ROM data.
+        It doesn't create new colors or enhance quality.
+        Success rate ~95% because palette data is standardized.
     """
 ```
 
-## 🔍 How to Contribute
+### **Documentation Standards**
+- **Be honest** about limitations and success rates
+- **Explain why** things are impossible, not just that they are
+- **Provide realistic** examples and expectations
+- **Avoid hype** and revolutionary language
 
-### **1. Pick an Issue**
-- Check [GitHub Issues](../../issues) for open tasks
-- Look for "good first issue" labels for beginners
-- Comment on issues to claim them
+### **Testing Standards**
+- Test with real Genesis ROMs (legally owned)
+- Document actual success rates with specific games
+- Note failures and limitations honestly
+- Compare results with original game behavior
 
-### **2. Development Process**
+## 🎯 How to Contribute
+
+### **1. Pick a Realistic Task**
+Check [GitHub Issues](../../issues) for:
+- "translation-tools" label
+- "asset-extraction" label  
+- "documentation" label
+- "quality-of-life" label
+
+**Avoid issues labeled:**
+- "impossible-enhancement"
+- "revolutionary-feature"
+- "magic-required"
+
+### **2. Set Realistic Expectations**
 ```bash
-# Create feature branch
-git checkout -b feature/palette-modification-saving
+# Good contribution goal:
+"Improve text extraction success rate from 80% to 85%"
 
-# Make changes with tests
-python grw_pipeline.py "test_rom.md"  # Test your changes
-
-# Commit with clear messages  
-git commit -m "Implement palette modification saving to ROM files"
-
-# Push and create PR
-git push origin feature/palette-modification-saving
+# Bad contribution goal:
+"Add revolutionary HD graphics enhancement"
 ```
 
-### **3. Pull Request Guidelines**
-- **Clear description:** What problem does this solve?
-- **Testing notes:** How did you test the changes?
-- **Example usage:** Show the feature working
-- **Documentation:** Update relevant docs
+### **3. Submit Honest Pull Requests**
+```
+Title: "Improve sprite detection accuracy by 10%"
+
+Description:
+- What: Better heuristics for finding sprite data
+- Why: Current method misses compressed sprites
+- Reality: Still won't detect everything, but helps
+- Testing: Tested with 20 games, success rate 80% → 90%
+```
 
 ## 🧪 Testing Your Changes
 
-### **Required Tests**
+### **Required Reality Checks**
 ```bash
-# Test with different ROM formats
-python grw_pipeline.py "sonic.md"     # Interleaved format
-python grw_pipeline.py "sonic.bin"    # Binary format  
-python grw_pipeline.py "sonic.smd"    # SMD format
-
-# Test error handling
-python grw_pipeline.py "corrupted.md" # Should fail gracefully
-python grw_pipeline.py "not_a_rom.txt" # Should detect invalid file
+# Test with these questions:
+1. Does this actually work?
+2. What's the real success rate?
+3. What are the limitations?
+4. Is this genuinely useful?
+5. Am I overhyping the results?
 ```
 
 ### **Success Criteria**
-- No crashes on valid ROM files
-- Clear error messages for invalid files
-- Preserves original ROM functionality
-- Works across different Genesis games
+- **Works:** Feature actually functions as described
+- **Honest:** Documentation matches reality
+- **Useful:** Provides genuine value to users
+- **Realistic:** Doesn't promise impossible things
 
 ## 📖 Resources for Contributors
 
-### **Genesis Technical Resources**
-- [Sega Genesis/Mega Drive Architecture](https://www.copetti.org/writings/consoles/mega-drive-genesis/)
-- [Genesis ROM Format Documentation](http://md.squee.co/Code)
-- [Genesis Palette Format](https://segaretro.org/Palette)
+### **Learn About Genesis Hardware:**
+- [Genesis Technical Reference](https://segaretro.org/Genesis_technical_information)
+- [VDP Programming Guide](https://plutiedev.com/vdp-intro)
+- [Sound Chip Documentation](https://plutiedev.com/ym2612-intro)
 
-### **ROM Hacking Community**
-- [RHDN (ROM Hacking Database)](https://www.romhacking.net/)
-- [Genesis Hacking Community](https://forums.sonicretro.org/)
-- [Technical Documentation](https://info.sonicretro.org/Category:Technical_information)
+### **Understand the Limitations:**
+- 512 total colors max (9-bit RGB)
+- 64 colors on-screen simultaneously
+- Fixed resolution (320x224 or 256x224)
+- M68000 CPU with specific timing constraints
 
-### **Python Resources**
-- [Binary File Handling](https://docs.python.org/3/library/struct.html)
-- [Bytes and Bytearray](https://docs.python.org/3/library/stdtypes.html#bytes-objects)
+### **ROM Hacking Community:**
+- [RHDN Forums](https://www.romhacking.net/forum/)
+- [Genesis ROM Hacking Resources](https://info.sonicretro.org/Category:Technical_information)
 
 ## 🚫 What We Don't Accept
 
-### **Impossible Features**
-- ❌ 60fps conversion attempts
-- ❌ Widescreen conversion code
-- ❌ "HD enhancement" features
-- ❌ Features that violate hardware limitations
+### **Impossible Feature Attempts**
+- ❌ Code that tries to add 60fps to games
+- ❌ Widescreen conversion implementations
+- ❌ HD graphics enhancement attempts
+- ❌ Magic performance improvements
 
-### **Code Quality Issues**
-- ❌ Uncommented complex algorithms
-- ❌ Hardcoded paths or assumptions
-- ❌ Missing error handling
-- ❌ Platform-specific code without alternatives
+### **Marketing Nonsense**
+- ❌ Revolutionary feature claims
+- ❌ Exaggerated success rates
+- ❌ Buzzword-heavy descriptions
+- ❌ Impossible capability promises
 
-### **Legal Issues**
-- ❌ Copyrighted ROM files in commits
-- ❌ Copyrighted graphics or audio
-- ❌ Code that enables piracy
-- ❌ Trademark violations
+### **Time-Wasting Projects**
+- ❌ Attempts to "enhance" fundamental hardware limitations
+- ❌ Projects that ignore technical reality
+- ❌ Features that can't actually work
 
-## 🏆 Recognition
+## 🏆 Recognition for Realistic Contributions
 
-### **Contributor Levels**
-- **⭐ Helper:** Documentation, bug reports, testing
-- **🌟 Developer:** Code contributions, feature implementation
-- **🚀 Maintainer:** Regular contributions, code review, project direction
+### **Valued Contributors:**
+- People who improve translation tools
+- Developers who enhance asset extraction
+- Writers who create honest documentation
+- Testers who provide realistic feedback
 
-### **Hall of Fame**
-Contributors will be recognized in:
-- README.md credits section
-- CONTRIBUTORS.md file
-- Release notes for major contributions
+### **Hall of Fame:**
+- Contributors who significantly improve success rates
+- People who add genuinely useful features
+- Developers who maintain realistic expectations
+- Anyone who helps keep the project honest
+
+## 💭 The Big Picture
+
+This project exists because the ROM hacking community is full of tools that promise impossible things and deliver nothing. We're building something different:
+
+**A toolkit that:**
+- Does what it says it does
+- Documents real limitations
+- Helps with achievable goals
+- Doesn't waste people's time
+
+**If you value honesty over hype, realistic tools over impossible promises, and working code over marketing claims, we'd love your contributions.**
 
 ## 🆘 Getting Help
 
-### **Stuck on Something?**
-1. **Check existing docs** in `tools/` directories
-2. **Search GitHub Issues** for similar problems
-3. **Ask in GitHub Discussions** for technical questions
-4. **Reference the codebase** - it's designed to be readable
+### **Good Questions:**
+- "How can I improve text extraction success rates?"
+- "What's the best way to detect compressed sprites?"
+- "Why is X impossible and what can we do instead?"
 
-### **Need Genesis ROM Knowledge?**
-- Start with the resources listed above
-- Join ROM hacking communities for advice
-- Study existing ROM hacking tools for patterns
-- Test with simple ROMs first (Sonic games are well-documented)
-
-## 💡 Ideas for New Contributors
-
-### **Easy First Contributions**
-- Improve error messages in existing code
-- Add support for additional ROM file extensions
-- Create tutorial documentation with screenshots
-- Test the workshop with different Genesis games
-
-### **Medium Difficulty**
-- Implement palette modification saving
-- Add text length validation
-- Improve sprite detection algorithms
-- Create unit tests for core functions
-
-### **Advanced Projects**
-- GUI interface development
-- Advanced ROM analysis features
-- Integration with existing ROM hacking tools
-- Community sharing platform
+### **Questions We Can't Help With:**
+- "How do I add 60fps to Genesis games?" (You don't)
+- "Can we make true HD graphics?" (No)
+- "Is revolutionary enhancement possible?" (No)
 
 ---
 
-**Every contribution helps preserve gaming history and advances ROM hacking knowledge.**
+**Every realistic contribution helps build better tools and advances honest ROM hacking knowledge.**
 
 Thank you for contributing to Genesis ROM Workshop! 🎮
 
