@@ -173,4 +173,77 @@ Wesley Ellis
 
 ---
 
-**Note**: This project is for learning about ROM file structure and game preservation. Always respect copyright laws and use legally obtained ROM files.
+## Project Status & Roadmap
+
+**Completion: ~50%**
+
+### What Works
+- ✅ Palette extraction from Genesis ROMs (grw_pipeline.py contains functional code)
+- ✅ Basic ROM file reading and structure analysis
+- ✅ Genesis palette decoding (9-bit color format)
+- ✅ Project structure with organized tool directories
+- ✅ Basic CLI interface (grw_pipeline.py)
+- ✅ ROM info extraction (name, region, size, checksum)
+
+### Known Limitations & Missing Features
+
+**Tool Directories Are Mostly Empty:**
+- ⚠️ **palette_editor/**: Has small stub file (~900 bytes) - not full implementation
+- ⚠️ **text_extractor/**: Has tiny stub (~520 bytes) - basic at best
+- ⚠️ **hex_editor/**: Directory exists but functionality unknown
+- ⚠️ **asset_extractor/**: Directory exists but implementation unclear
+- ⚠️ **rom_analyzer/**: Directory exists but needs verification
+- ⚠️ **asset_manager/**: Directory exists but likely not implemented
+
+**Features Described But Not Fully Implemented:**
+- ❌ **Palette Modification**: Extraction works, but editing/saving not verified
+- ❌ **Text Extraction**: Stub exists but comprehensive text finding not confirmed
+- ❌ **Hex Editor**: Mentioned in README but implementation status unknown
+- ❌ **Asset Management**: Directory structure only
+- ❌ **Batch Processing**: Mentioned but not verified to work
+
+**Missing Features:**
+- ⚠️ **GUI**: Command-line only
+- ⚠️ **ROM Formats**: Claims to support SMS/Game Gear/32X but likely Genesis-only
+- ⚠️ **Compressed Data**: No support for compressed ROM data
+- ⚠️ **Testing**: No test suite
+- ⚠️ **Documentation**: Limited examples and guides
+- ⚠️ **Export Formats**: PNG palette export mentioned but not confirmed
+
+**Code Quality:**
+- ⚠️ **Incomplete Tools**: Most tool directories have stub files only
+- ⚠️ **No Tests**: No automated tests
+- ⚠️ **Limited Error Handling**: Basic validation only
+- ⚠️ **No Logging**: Minimal logging or debugging support
+
+### What Needs Work
+
+1. **Complete Tool Implementations** - Flesh out all tool directory stubs into working tools
+2. **Text Extraction** - Implement comprehensive text finding with proper encoding support
+3. **Palette Editing** - Add ability to modify and save palette changes back to ROM
+4. **Asset Extraction** - Implement graphics/sprite extraction
+5. **Hex Editor** - Build functional hex viewing and editing interface
+6. **GUI Application** - Create user-friendly graphical interface
+7. **Testing Suite** - Add comprehensive tests for ROM parsing
+8. **Better Documentation** - Add detailed examples for each tool
+9. **Multi-Format Support** - Implement claimed SMS/Game Gear/32X support
+10. **Error Handling** - Robust handling of malformed or unusual ROMs
+
+### Current Status
+
+This project has a **solid foundation** with working palette extraction, but most features described in the README are not fully implemented. The main grw_pipeline.py file (524 lines) contains actual functional code for palette extraction and basic ROM analysis. However, the individual tool directories mostly contain small stub files rather than complete implementations.
+
+It's a good **starting point** for ROM analysis work, but needs significant development to become the full toolkit described in the README.
+
+### Contributing
+
+If you'd like to help complete this project, contributions are welcome. Priority areas:
+1. Implementing text extraction with proper encoding support
+2. Building out hex editor functionality
+3. Creating sprite/asset extraction tools
+4. Adding comprehensive tests
+5. Writing detailed usage documentation
+
+---
+
+**Note**: This project is for learning about ROM file structure and game preservation. Always respect copyright laws and use legally obtained ROM files. Many features described in the README are partially implemented or planned for future development.
