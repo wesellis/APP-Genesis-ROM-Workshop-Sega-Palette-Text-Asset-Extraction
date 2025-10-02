@@ -1,6 +1,7 @@
 # Genesis ROM Workshop - Text Extractor
 # For translation projects and text modification
 
+
 class TextExtractor:
     """Extract and modify text in Genesis ROMs"""
 
