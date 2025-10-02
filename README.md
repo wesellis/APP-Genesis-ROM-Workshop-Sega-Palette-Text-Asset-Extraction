@@ -1,9 +1,11 @@
 # Genesis ROM Workshop
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-
 A Python toolkit for analyzing and extracting assets from Sega Genesis/Mega Drive ROM files.
+
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/wesellis/APP-Genesis-ROM-Workshop-Sega-Palette-Text-Asset-Extraction?style=flat-square)](https://github.com/wesellis/APP-Genesis-ROM-Workshop-Sega-Palette-Text-Asset-Extraction/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/wesellis/APP-Genesis-ROM-Workshop-Sega-Palette-Text-Asset-Extraction?style=flat-square)](https://github.com/wesellis/APP-Genesis-ROM-Workshop-Sega-Palette-Text-Asset-Extraction/commits)
 
 ## Overview
 
