@@ -1,12 +1,14 @@
 # Genesis ROM Workshop - Requirements
 # Professional dependencies for real ROM modification tools
 
+# REQUIRED for graphics rendering (NEW!)
+Pillow>=9.0.0          # Image processing - REQUIRED for palette previews and tile rendering
+
 # Core dependencies for ROM analysis
 capstone>=4.0.2        # Disassembly engine for M68K analysis (optional)
 
-# Optional but recommended for advanced features
-Pillow>=9.0.0          # Image processing for extracted graphics
-numpy>=1.21.0          # Numerical processing for palette manipulation
+# Optional dependencies
+numpy>=1.21.0          # Numerical processing for palette manipulation (optional)
 
 # Development and testing (contributors only)
 pytest>=7.0.0          # Unit testing framework
@@ -16,10 +18,18 @@ flake8>=4.0.0          # Code linting
 # Note: This project intentionally uses minimal dependencies
 # Most ROM manipulation uses Python's built-in capabilities:
 # - struct: Binary data handling
-# - bytes/bytearray: ROM data manipulation  
+# - bytes/bytearray: ROM data manipulation
 # - pathlib: File system operations
 # - json: Data export and project management
 # - hashlib: ROM checksums and validation
 #
-# We avoid heavy dependencies that add complexity without value.
-# The goal is a tool that works reliably across different systems.
+# NEW FEATURES (require Pillow):
+# - Palette preview images
+# - Tile rendering to PNG
+# - Tile sheet creation
+# - Graphics visualization
+#
+# Install graphics features:
+#   pip install Pillow
+#
+# The toolkit works without Pillow, but graphics rendering will be disabled.
